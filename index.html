@@ -12,46 +12,39 @@
 </head>
 
 <body>
-	<h1 id="title">Piotr Zychlinski</h1>
-	<ul id="social-media-links">
-		<li><img src = "assets/github_icon.png" height="15px" width="15px"><a href="https://github.com/pzet123" target="_blank">Github</a></li>
-		<li><img src = "assets/stackoverflow_icon.png" height="15px" width="15px"><a href="https://stackoverflow.com/users/13776031/pzet" target="_blank">Stack Overflow</a></li>
-		<li><img src = "assets/linkedin_icon.png" width="15px" height="15px"><a href="https://www.linkedin.com/in/piotr-zychlinski-63a205226/" target="_blank">LinkedIn</a></li>
-	</ul>
-	<button id = "navButton" onclick = "toggleMenu()">Navigation</button>
+	<div id="navbar">
+		<h1 id="title">Piotr Zychlinski</h1>
 
-	<div id="toggleMenu">
-		<ul>
+		<ul id="social-media-links">
+			<li><img src = "assets/github_icon.png" height="15px" width="15px"><a href="https://github.com/pzet123" target="_blank">Github</a></li>
+			<li><img src = "assets/stackoverflow_icon.png" height="15px" width="15px"><a href="https://stackoverflow.com/users/13776031/pzet" target="_blank">Stack Overflow</a></li>
+			<li><img src = "assets/linkedin_icon.png" width="15px" height="15px"><a href="https://www.linkedin.com/in/piotr-zychlinski-63a205226/" target="_blank">LinkedIn</a></li>
+		</ul>
+
+		<button id="navButton" onclick = "toggleMenu()">Navigation</button>
+		
+		<ul id="toggleMenu">
 			<li><a class="nav-link active" href="#">Home</a></li>
 			<li><a class="nav-link" href="projects.html"> Projects</a></li>
 			<li><a class="nav-link" href="#">CV</a></li>
-		</ul> 	
+		</ul> 
 	</div>
 
 	<div id="content">
-		<p id="intro">I am a student at the University of Warwick currently pursuing a bachelor's degree in CS. I am currently working towards becoming a full-stack developer hence I am most interested in software development however I also enjoy learning about computer architecture & organisation.</p>
-
+		<p id="intro">I am a first year student at the University of Warwick currently pursuing a bachelor's degree in CS. I am currently working towards becoming a full-stack developer hence I am most interested in software development.</p>
 	</div>
 	
 	<footer>
 	  	<div>
-
-
-	        <h5>contact details:</h5>
+	        <h3>contact details:</h5>
 	        <ul>
 	        	<li>Number: 07732827322</li>
 	        	<li>Email: testEmail@test.com</li>
-
 	        </ul>
-
 	  	</div>
-
-
-
 	</footer>
 
 <script src="js/jquery-3.6.0.js"></script>
 <script src="js/script.js"></script>
-
 </body>
 </html>
