@@ -11,27 +11,28 @@
 
 </head>
 <body>
-	<h1 id="title">Projects</h1>
+	<div id="navbar">
+		<h1 id="title">Piotr Zychlinski</h1>
 
-	<ul id="social-media-links">
-		<li><img src = "assets/github_icon.png" height="15px" width="15px"><a href="https://github.com/pzet123" target="_blank">Github</a></li>
-		<li><img src = "assets/stackoverflow_icon.png" height="15px" width="15px"><a href="https://stackoverflow.com/users/13776031/pzet" target="_blank">Stack Overflow</a></li>
-		<li><img src = "assets/linkedin_icon.png" width="15px" height="15px"><a href="https://www.linkedin.com/in/piotr-zychlinski-63a205226/" target="_blank">LinkedIn</a></li>
-	</ul>
-	<button id = "navButton" onclick = "toggleMenu()">Navigation</button>
+		<ul id="social-media-links">
+			<li><img src = "assets/github_icon.png" height="15px" width="15px"><a href="https://github.com/pzet123" target="_blank">Github</a></li>
+			<li><img src = "assets/stackoverflow_icon.png" height="15px" width="15px"><a href="https://stackoverflow.com/users/13776031/pzet" target="_blank">Stack Overflow</a></li>
+			<li><img src = "assets/linkedin_icon.png" width="15px" height="15px"><a href="https://www.linkedin.com/in/piotr-zychlinski-63a205226/" target="_blank">LinkedIn</a></li>
+		</ul>
 
-	<div id="toggleMenu">
-		<ul>
-			<li><a class="nav-link active" href="#">Home</a></li>
+		<button id="navButton" onclick = "toggleMenu()">Navigation</button>
+		
+		<ul id="toggleMenu">
+			<li><a class="nav-link active" href="/">Home</a></li>
 			<li><a class="nav-link" href="projects.html"> Projects</a></li>
-			<li><a class="nav-link" href="#">CV</a></li>
-		</ul> 	
+			<li><a class="nav-link" href="/">CV</a></li>
+		</ul> 
 	</div>
 
 	<div id="content">
 
 		<div class = "project">
-			<h2>Project 1</h2>
+			<h2>Companion App</h2>
 			<img src="https://picsum.photos/400/300">
 			<p> 
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit. In volutpat vel tortor nec pulvinar. Donec fermentum erat ac sem congue pellentesque. Nunc varius, lacus at interdum molestie, metus magna pulvinar metus, vitae volutpat ante risus vel felis.
@@ -63,19 +64,18 @@
 
 
 	<footer>
+		<div>
+		  <h3>contact details:</h5>
+		  <ul>
+			  <li>Number: 07732827322</li>
+			  <li>Email: testEmail@test.com</li>
+		  </ul>
+		</div>
+  </footer>
 
-	        <h5>contact details:</h5>
-	        <ul>
-	        	<li>Number: 07732827322</li>
-	        	<li>Email: testEmail@test.com</li>
 
-	        </ul>
-
-	</footer>
-
-
-<script src="js/jquery-3.6.0.js"></script>
-<script src="js/script.js"></script>
+	<script src="js/jquery-3.6.0.js"></script>
+	<script src="js/script.js"></script>
 
 </body>
 </html>

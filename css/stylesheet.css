@@ -138,18 +138,37 @@ button:hover{
 
 
 .project{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-end;
 	margin-bottom: 50px;
 }
 
 
 
 .project img{
-	max-width:800px;
- 	max-height:600px;
+	max-width:480px;
+ 	max-height:480px;
  	width: auto;
  	height: auto;
+	margin-right: auto;
+	flex-grow: 1;
+}
 
+.project p{
+	margin: 0px 0px 0px 10px;
+	flex-grow: 2;
+	flex-basis: 200px;
+}
 
+.project h2{
+	flex-basis: 100%;
+}
+
+.project button{
+	margin-top: 10px;
+	flex-basis: 100%;
 }
 
 
@@ -176,6 +195,10 @@ h1{
  		width: unset;
  		height: unset;
 	}	
+
+	.project p{
+		margin: 5px 0px;
+	}
 	
 	#title{
 		font-size: 38px;
