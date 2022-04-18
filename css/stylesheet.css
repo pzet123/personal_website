@@ -33,6 +33,10 @@ html{
 	font-family: Lato-Regular;
 }
 
+hr{
+	border-color: #000000;
+}
+
 ul{
 	padding: 0px;
 	list-style: none;
@@ -60,10 +64,12 @@ button{
     transition-timing-function: ease-out;
 }
 
+
 button:hover{
 	background-color: var(--tertiaryColour);
 	color: var(--textColour);
 }
+
 
 #content{
 	margin: 5px 10px;
@@ -71,6 +77,30 @@ button:hover{
 	padding: 40px;
 	background-color: var(--tertiaryColour);
 }
+
+#experience ul{
+	margin-left: 20px;
+	list-style: unset;
+	margin-bottom: 20px;
+}
+
+#experience h5{
+	margin-top: 5px;
+}
+
+#experience h2{
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+#education p{
+	margin-top: 0px;
+}
+
+#education h3{
+	margin-top: 15px;
+}
+
 
 #navbar{
 	border-radius: 5px;
@@ -84,16 +114,44 @@ button:hover{
 	background-color: var(--secondaryColour);
 }
 
+
 #navButton{
 	margin-top: 10px;
 	width: 100%;
 	border: none;
 }
 
+#hobbies ul{
+	margin: 8px 10px
+}
+
+#hobbies a{
+	color: purple;
+	text-decoration: underline;
+}
+
+#hobbies a:hover{
+	color: pink;
+}
+
+#readingList ul{
+	margin: 8px 10px
+}
+
+#readingList h3, #readingList h4{
+	margin: 5px 0px 2px 0px;
+}
+
+
+#schoolGrades td:nth-child(2){
+	text-align: center;
+}
+
 
 #social-media-links li:hover, #toggleMenu li:hover{
 	text-decoration: underline;
 }
+
 
 #social-media-links a{
 	text-decoration: none;
@@ -116,9 +174,19 @@ button:hover{
 	display: inline;
 }
 
+
 #social-media-links {
 	width: 100%;
 	margin-top: 4px;
+}
+
+#qualifications a{
+	color: purple;
+	text-decoration: underline;
+}
+
+#qualifications a:hover{
+	color: pink;
 }
 
 #title{
@@ -127,14 +195,11 @@ button:hover{
 	margin-right: auto;
 }
 
+
 #toggleMenu{
 	margin-left: auto;
 	margin-top: -60px;
 }
-
-
-
-
 
 
 .project{
@@ -146,7 +211,6 @@ button:hover{
 }
 
 
-
 .project img{
 	max-width:480px;
  	max-height:480px;
@@ -154,30 +218,77 @@ button:hover{
  	height: auto;
 	margin-right: auto;
 	flex-grow: 1;
+	border-radius: 5px;
 }
+
 
 .project p{
-	margin: 0px 0px 0px 10px;
-	flex-grow: 2;
-	flex-basis: 200px;
+	font-size: 1.2em;
+	letter-spacing: 0.5px;
 }
+
 
 .project h2{
+	text-align: center;
 	flex-basis: 100%;
+	padding-bottom: 10px;
+	font-size: 30px;
 }
 
-.project button{
-	margin-top: 10px;
-	flex-basis: 100%;
+.buttonRow{
+	width: 100%;
+	display: flex;
+}
+
+.buttonRow button{
+	width: 100%;
+}
+
+.buttonRow a{
+	flex: 1;
+	margin: 10px 3px;
 }
 
 
+.projectDescription{
+	display: inline;
+	flex-grow: 2;
+	flex-basis: 167px;
+	margin: 0px 0px 0px 10px;
+}
+
+
+.project2Image{
+	display: none;
+}
+
+.imageCarousel{
+	position: relative;
+}
+
+.back, .forward{
+	position: absolute;
+	top: 50%;
+	width: auto;
+	cursor: pointer;
+	padding: 10px;
+	transition: 0.2s;
+	fill-opacity: 0.2;
+	background-color: rgba(201, 162, 39, 0.3);
+}
+
+.forward{
+	right: 0;
+}
+
+.back:hover, .forward:hover {
+	background-color: #C9A227;
+}
 
 
 h1{
 	margin: 0;
 }
-
 
 
 @media (max-width: 576px) {
@@ -188,16 +299,23 @@ h1{
 
 }
 
+
 @media (max-width: 768px) {
 	.project img{
-		max-width: unset;
- 		max-height: unset;
- 		width: unset;
- 		height: unset;
+		max-width: 100%;
+ 		max-height: 100%;
+		min-width: 350px;
+		min-height: 250px;
 	}	
 
-	.project p{
+	.projectDescription{
 		margin: 5px 0px;
+		flex-basis: 100%;
+	}
+
+	.projectDescription h3{
+		margin-top: 10px;
+		text-align: center;
 	}
 	
 	#title{
