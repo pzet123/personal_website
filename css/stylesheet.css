@@ -304,8 +304,6 @@ h1{
 	.project img{
 		max-width: 100%;
  		max-height: 100%;
-		min-width: 350px;
-		min-height: 250px;
 	}	
 
 	.projectDescription{
