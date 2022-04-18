@@ -326,6 +326,13 @@ h1{
 	#social-media-links{
 		text-align: center;
 		margin: 0px;
+		display: block;
+	}
+
+	#social-media-links li{
+		margin: 5px 0px;
+		border: none;
+		display: block;
 	}
 
 	#toggleMenu{
