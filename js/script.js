@@ -1,7 +1,8 @@
 $(function(){
-    $("#toggleMenu").hide();
     if($(window).width() > 768){
         $("#navButton").hide();
+    } else {
+        $("#toggleMenu").hide();
     }
 
     $(window).resize(function() {

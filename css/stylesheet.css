@@ -35,6 +35,9 @@ html{
 
 hr{
 	border-color: #000000;
+	border-style: none;
+	background-color: #000000;
+	height: 2px;
 }
 
 ul{
@@ -136,6 +139,10 @@ button:hover{
 
 #readingList ul{
 	margin: 8px 10px
+}
+
+#readingList li{
+	margin: 2px 0px;
 }
 
 #readingList h3, #readingList h4{
