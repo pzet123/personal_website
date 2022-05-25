@@ -24,6 +24,10 @@ h1, h2, h3, h4, h5, h6{
 	margin: 0px;
 }
 
+body, html{
+	height: 100%;
+}
+
 html{
 	background-color: #161A1D;
 }
@@ -52,8 +56,6 @@ a{
 
 footer{
 	background-color: var(--secondaryColour);
-	margin: 5px 10px;
-	border-radius: 5px;
 	padding: 8px 10px;
 }
 
@@ -75,8 +77,7 @@ button:hover{
 
 
 #content{
-	margin: 5px 10px;
-	border-radius: 5px;
+	margin-bottom: 5px;
 	padding: 40px;
 	background-color: var(--tertiaryColour);
 }
@@ -104,24 +105,54 @@ button:hover{
 	margin-top: 15px;
 }
 
+#frontPage{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 95%;
+	width: 100%;
+	margin-bottom: 5px;
+	background-color: var(--tertiaryColour);
+}
+
+#title{
+	padding-top: 15vh;
+	font-size: 120px;
+	font-family: Lato-Thin;
+	letter-spacing: 15px;
+	text-align: center;
+}
+
+#subtitle{
+	text-align: center;
+	font-family: Lato-Thin;
+}
+
+#navbarTitle{
+	margin: 0px 10px;
+}
+
 
 #navbar{
-	border-radius: 5px;
+	min-height: 40px;
+	height: 5%;
 	padding: 8px 10px;
-	margin: 0px 10px;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	align-items: center;
-	justify-content: center;
+	align-items:flex-end;
 	background-color: var(--secondaryColour);
+}
+
+#copyright{
+	text-align: center;
 }
 
 
 #navButton{
-	margin-top: 10px;
+	margin: 5px 0px 0px 0px;
 	width: 100%;
-	border: none;
+	border-radius: 0px;
 }
 
 #hobbies ul{
@@ -174,7 +205,7 @@ button:hover{
 
 
 #social-media-links li, #toggleMenu li{
-	border-left: 0.2em solid;
+	border-left: 2px solid;
 	padding-left: 0.5em;
 	padding-right: 0.5em;
 	height: 1.5em;
@@ -183,8 +214,7 @@ button:hover{
 
 
 #social-media-links {
-	width: 100%;
-	margin-top: 4px;
+	margin: 10px 0px;
 }
 
 #qualifications a{
@@ -196,16 +226,11 @@ button:hover{
 	color: pink;
 }
 
-#title{
-	font-family: Lato-Thin;
-	letter-spacing: 0.08em;
-	margin-right: auto;
-}
+
 
 
 #toggleMenu{
-	margin-left: auto;
-	margin-top: -60px;
+	margin: 0px 0px 0px auto;
 }
 
 
@@ -322,25 +347,32 @@ h1{
 		margin-top: 10px;
 		text-align: center;
 	}
-	
-	#title{
-		font-size: 38px;
-		width: 100%;
-		text-align: center;
-		margin: 0px;
+
+	#navbar{
+		height: unset;
+		justify-content: center;
+		padding: 5px 0px 0px 0px;
 	}
 
-	#social-media-links{
+	#navbarTitle{
+		text-align: center;
+	}
+	
+	#title{
+		font-size: 46px;
+	}
+
+	/* #social-media-links{
 		text-align: center;
 		margin: 0px;
 		display: block;
-	}
+	} */
 
-	#social-media-links li{
+	/* #social-media-links li{
 		margin: 5px 0px;
 		border: none;
 		display: block;
-	}
+	} */
 
 	#toggleMenu{
 		width: 80%;
