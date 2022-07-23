@@ -64,8 +64,9 @@ button{
 	background-color: #000000;
 	color: var(--secondaryColour);
 	border-radius: 5px;
+	border-color: #000000;
 	padding: 5px 10px;
-	transition-duration: 0.5s;
+	transition-duration: 0.2s;
     transition-timing-function: ease-out;
 }
 
@@ -93,8 +94,11 @@ button:hover{
 }
 
 #experience h2{
-	margin-top: 20px;
 	margin-bottom: 10px;
+}
+
+#experience{
+	margin-top: 20px;
 }
 
 #education p{
@@ -135,12 +139,12 @@ button:hover{
 
 #navbar{
 	min-height: 40px;
-	height: 5%;
+	height: 60px;
 	padding: 8px 10px;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	align-items:flex-end;
+	align-items: center;
 	background-color: var(--secondaryColour);
 }
 
@@ -168,6 +172,13 @@ button:hover{
 	color: pink;
 }
 
+#readingList, #hobbies, #intro, #experience, #education, #qualifications, #skills{
+	padding: 5px 10px;
+	border-radius: 12px;
+	background-color: #DBB42C;
+	margin-bottom: 15px;
+}
+
 #readingList ul{
 	margin: 8px 10px
 }
@@ -186,8 +197,8 @@ button:hover{
 }
 
 
-#social-media-links li:hover, #toggleMenu li:hover{
-	text-decoration: underline;
+.nav-link:hover{
+	border-bottom: #000000 solid 2px;
 }
 
 
@@ -203,6 +214,14 @@ button:hover{
 	padding-left: 0;
 }
 
+.nav-link{
+	transition: 0.5s;
+}
+
+.active{
+	font-weight: bold;
+}
+
 
 #social-media-links li, #toggleMenu li{
 	border-left: 2px solid;
@@ -215,6 +234,20 @@ button:hover{
 
 #social-media-links {
 	margin: 10px 0px;
+	display: flex;
+	flex-direction: row;
+}
+
+#social-media-links li{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.social-media-column{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
 }
 
 #qualifications a{
@@ -240,6 +273,9 @@ button:hover{
 	flex-wrap: wrap;
 	justify-content: flex-end;
 	margin-bottom: 50px;
+	padding: 5px 10px;
+	border-radius: 12px;
+	background-color: #DBB42C;
 }
 
 
@@ -295,6 +331,7 @@ button:hover{
 }
 
 .imageCarousel{
+	width: fit-content;
 	position: relative;
 }
 
@@ -323,16 +360,13 @@ h1{
 }
 
 
-@media (max-width: 576px) {
-	.project img{
-		max-width:none;
- 		max-height:none;
-	}
 
-}
 
 
 @media (max-width: 768px) {
+	footer{
+		font-size: 12px;
+	}
 	.project img{
 		max-width: 100%;
  		max-height: 100%;
@@ -390,4 +424,34 @@ h1{
 		width: 100%;
 		text-align: center;
 	}
+}
+
+@media (max-width: 576px) {
+	#social-media-links a{
+		font-size: 12px;
+	}
+	#title{
+		font-size: 28px;
+	}
+
+	#subtitle{
+		margin-top: 10px;
+		font-size: 18px;
+	}
+
+	#content{
+		font-size: 12px;
+		padding: 15px;
+	}
+
+	.project p{
+		font-size: 12px;
+	}
+
+	.buttonRow{
+		font-size: 12px;
+	}
+
+
+
 }
