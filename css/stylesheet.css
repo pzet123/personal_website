@@ -163,12 +163,12 @@ button:hover{
 	margin: 8px 10px
 }
 
-#hobbies a{
+#hobbies a, .project a{
 	color: purple;
 	text-decoration: underline;
 }
 
-#hobbies a:hover{
+#hobbies a:hover, .project a:hover{
 	color: pink;
 }
 
